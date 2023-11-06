@@ -1,0 +1,35 @@
+// Navigation.scss
+
+nav {
+    background-color: #fff; // Background color for the navigation bar
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  
+    .logo-container {
+      a {
+        text-decoration: none; // Remove underline from the logo link
+        img {
+          width: 100px; // Adjust the logo width as needed
+          height: auto;  // Maintain aspect ratio
+          display: block;
+        }
+      }
+    }
+  
+    .menu-container {
+      .menu-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        img {
+          width: 30px; // Adjust the menu icon size as needed
+          height: auto; // Maintain aspect ratio
+          display: block;
+        }
+      }
+    }
+  }
+  
