@@ -15,7 +15,6 @@ const Navigation = () => {
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
-    console.log(showNavbar);
   };
 
   return (
@@ -31,6 +30,8 @@ const Navigation = () => {
           className="menu-button"
           onClick={handleShowNavbar}
           aria-label="Toggle menu"
+          // dodano
+          aria-controls="primary-navigation"
         >
           {showNavbar ? (
             <img src={closeIcon} alt="Close" />

@@ -24,11 +24,20 @@ nav {
         border: none;
         cursor: pointer;
         padding: 0;
+
+        transition: transform 0.3s; // Add a transform transition for the button
+      transform: rotate(0deg); // Initial transform state
+    
         img {
           width: 30px; // Adjust the menu icon size as needed
           height: auto; // Maintain aspect ratio
           display: block;
         }
+       
+
+      &.open {
+        transform: rotate(45deg); // Final transform state when the menu is open
+      }
       }
     }
   }
