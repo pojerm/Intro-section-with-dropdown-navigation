@@ -1,7 +1,17 @@
+<<<<<<< Updated upstream
 .App {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+=======
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+.App {
+  font-family: "Epilogue", sans-serif;
+>>>>>>> Stashed changes
 }
 
+//variables
+$almost-white: hsl(0, 0%, 98%);
+$medium-gray: hsl(0, 0%, 41%);
+$almost-black: hsl(0, 0%, 8%);
