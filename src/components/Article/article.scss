@@ -1,0 +1,26 @@
+@import "../../App.scss";
+
+.article {
+  text-align: center;
+  margin-top: 3rem;
+  &__title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: $almost-black;
+    margin-bottom: 1rem;
+  }
+  &__text {
+    font-size: 1.8rem;
+    color: $medium-gray;
+    margin-bottom: 3rem;
+  }
+  &__button {
+    background-color: $almost-black;
+    color: $almost-white;
+    padding: 1.3rem 2.5rem;
+    border: none;
+    border-radius: 1.8rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+}
