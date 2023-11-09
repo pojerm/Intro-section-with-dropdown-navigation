@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation/Navigation";
 import imageHeroMobile from "/image-hero-mobile.png";
 import imageHeroDesktop from "/image-hero-desktop.png";
 import Article from "./components/Article/Article";
+import Sponsors from "./components/Sponsors/Sponsors";
 
 export default function App() {
   return (
@@ -11,7 +12,7 @@ export default function App() {
       <Navigation />
       <Hero
         mobileImageSrc={imageHeroMobile}
-        desktopImageSrc={imageHeroMobile}
+        desktopImageSrc={imageHeroDesktop}
       />
       <Article
         title="Make remote work"
@@ -19,6 +20,7 @@ export default function App() {
   create team rituals, and watch productivity soar."
         buttonText="Learn more"
       />
+      <Sponsors />
     </div>
   );
 }
