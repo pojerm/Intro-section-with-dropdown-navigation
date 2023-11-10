@@ -1,44 +1,42 @@
 // Navigation.scss
 
 nav {
-    background-color: #fff; // Background color for the navigation bar
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-  
-    .logo-container {
-      a {
-        text-decoration: none; // Remove underline from the logo link
-        img {
-          width: 100px; // Adjust the logo width as needed
-          height: auto;  // Maintain aspect ratio
-          display: block;
-        }
+  background-color: #fff; // Background color for the navigation bar
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem 4rem 2rem;
+
+  .logo-container {
+    a {
+      text-decoration: none; // Remove underline from the logo link
+      img {
+        width: 100px; // Adjust the logo width as needed
+        height: auto; // Maintain aspect ratio
+        display: block;
       }
     }
-  
-    .menu-container {
-      .menu-button {
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 0;
+  }
 
-        transition: transform 0.3s; // Add a transform transition for the button
+  .menu-container {
+    .menu-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+
+      transition: transform 0.3s; // Add a transform transition for the button
       transform: rotate(0deg); // Initial transform state
-    
-        img {
-          width: 30px; // Adjust the menu icon size as needed
-          height: auto; // Maintain aspect ratio
-          display: block;
-        }
-       
+
+      img {
+        width: 30px; // Adjust the menu icon size as needed
+        height: auto; // Maintain aspect ratio
+        display: block;
+      }
 
       &.open {
         transform: rotate(45deg); // Final transform state when the menu is open
       }
-      }
     }
   }
-  
+}
