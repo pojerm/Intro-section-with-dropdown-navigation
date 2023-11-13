@@ -13,6 +13,7 @@ const Navigation = () => {
   // toggle hamburger icon
   const [showNavbar, setShowNavbar] = useState(false);
 
+  // sa ovom funkcijom kontroliram tu hamburger ikonu
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
