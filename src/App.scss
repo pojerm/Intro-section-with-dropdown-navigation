@@ -8,3 +8,13 @@
 $almost-white: hsl(0, 0%, 98%);
 $medium-gray: hsl(0, 0%, 41%);
 $almost-black: hsl(0, 0%, 8%);
+
+@media (min-width: 1000px) {
+  // Add your styles for devices wider than 1000px here
+  .desktop {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    direction: rtl;
+  }
+}

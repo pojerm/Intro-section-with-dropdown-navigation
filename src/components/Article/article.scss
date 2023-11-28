@@ -1,11 +1,19 @@
 @import "../../App.scss";
 
+.article-section {
+  // border za test
+  // border: 2px solid black;
+}
+
 .article {
   display: flex;
   flex-direction: column;
   align-content: end;
   align-items: center;
   margin-top: 3rem;
+  // border za test
+  // border: 2px solid rgb(114, 45, 45);
+
   &__title {
     font-size: 3.5rem;
     font-weight: 700;
@@ -16,6 +24,7 @@
     font-size: 1.6rem;
     padding: 0 1rem;
     color: $medium-gray;
+    justify-items: start;
     margin-bottom: 3rem;
     font-weight: 500;
     max-width: 37.5rem;
@@ -32,8 +41,41 @@
     &:hover {
       background-color: $almost-white;
       color: $almost-black;
-      border: 2px solid $almost-black;
       padding: 1.2rem 2.7rem; //i tu smo to racunali
+      // border za test
+      // border: 2px solid $almost-black;
     }
+  }
+}
+
+@media (min-width: 1000px) {
+  // Add your styles for devices wider than 1000px here
+  .article-section {
+    display: flex;
+    justify-content: center;
+  }
+  .article {
+    justify-content: center;
+    margin-top: 0; //maknuo marginu na 0
+    align-items: flex-end; // poravna sve ljevo
+    width: 53rem;
+
+    &__title {
+      font-size: 8rem;
+      text-align: left;
+      line-height: 1;
+      margin-bottom: 5rem;
+    }
+    &__text {
+      text-align: left;
+      font-size: 1.8rem;
+      margin-bottom: 5rem;
+      max-width: 50rem;
+      // border za test
+      // border: 1px solid black;
+    }
+    // &__button {
+
+    // }
   }
 }

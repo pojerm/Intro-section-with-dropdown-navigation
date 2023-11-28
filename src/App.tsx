@@ -10,16 +10,18 @@ export default function App() {
   return (
     <div className="App">
       <Navigation />
-      <Hero
-        mobileImageSrc={imageHeroMobile}
-        desktopImageSrc={imageHeroDesktop}
-      />
-      <Article
-        title="Make remote work"
-        text="Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar."
-        buttonText="Learn more"
-      />
+      <div className="desktop">
+        <Hero
+          mobileImageSrc={imageHeroMobile}
+          desktopImageSrc={imageHeroDesktop}
+        />
+        <Article
+          title="Make remote work"
+          text="Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar. "
+          buttonText="Learn more"
+        />
+      </div>
       <Sponsors />
     </div>
   );
