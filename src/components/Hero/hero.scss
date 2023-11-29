@@ -1,23 +1,18 @@
 /* HeroImage.scss */
+//desktop hero image
+@media (min-width: 1000px) {
+  // Add your styles for devices wider than 1000px here
 
-.hero-image {
-  position: relative;
-  width: 100%;
-  height: 400px; /* Adjust the height as needed */
-  overflow: hidden;
-
-  img {
+  .hero-wrapper {
+    position: relative; //ovo ne treba za desktop
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    height: 800px; /* Adjust the height as needed */
+    // overflow: hidden; // ne vidi se cijela slika
 
-  .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff; /* Text color */
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 }
