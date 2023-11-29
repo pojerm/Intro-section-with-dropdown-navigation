@@ -10,7 +10,8 @@
 .brand-image {
   width: 7rem;
 }
-
 @media (min-width: 1000px) {
-  // Add your styles for devices wider than 1000px here
+  .sponsors {
+    display: none;
+  }
 }

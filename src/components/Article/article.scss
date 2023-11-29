@@ -47,6 +47,9 @@
     }
   }
 }
+.row-desktop {
+  display: none;
+}
 
 @media (min-width: 1000px) {
   // Add your styles for devices wider than 1000px here
@@ -77,5 +80,25 @@
     // &__button {
 
     // }
+  }
+}
+
+// destop version sponsors section
+@media (min-width: 1000px) {
+  // Add your styles for devices wider than 1000px here
+  .article-section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .sponsors-desktop {
+  }
+  .row-desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 53rem;
   }
 }
